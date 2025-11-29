@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -146,7 +147,10 @@
         Browser kamu tidak mendukung audio.
     </audio>
 
- 
+    <div class="photo-frame">
+        <img src="gambar_1.jpg" alt="Foto">
+        <img src="gambar_2.jpg" alt="Foto">
+    </div>
 
     <div class="message" id="typedText"></div>
 
@@ -211,7 +215,692 @@ kamu pasti bisa ngerasain itu dari aku. so on your birthday, i just want to remi
 
 </body>
 </html>
-<div class="photo-frame">
-        <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.18_3372c87e.jpg" alt="Foto">
-        <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.17_ce3b2717.jpg" alt="Foto">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #bfbfbf, #6f6f6f);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.2em;
+            font-weight: 700;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            animation: fadeDown 2s ease;
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* FOTO FRAME ESTETIK */
+        .photo-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .photo-item {
+            width: 220px;
+            padding: 12px;
+            background: rgba(255,255,255,0.12);
+            border-radius: 20px;
+            border: 3px dashed rgba(255,255,255,0.5);
+            position: relative;
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+            backdrop-filter: blur(5px);
+            transform: rotate(-2deg);
+            transition: 0.3s;
+        }
+
+        .photo-item:nth-child(2) { transform: rotate(2deg); }
+
+        .photo-item:hover {
+            transform: scale(1.05) rotate(0deg);
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* STIKER CUTE */
+        .sticker {
+            position: absolute;
+            font-size: 28px;
+        }
+        .s1 { top: -15px; left: -10px; }
+        .s2 { bottom: -10px; right: -5px; }
+
+        /* TAPE ESTETIK */
+        .tape {
+            width: 80px;
+            height: 25px;
+            background: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>selamat ulangtahun❤</h1>
+
+    <div class="photo-grid">
+
+        <!-- FOTO 1 + CAPTION -->
+        <div class="photo-item">
+            <div class="tape"></div>
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.18_3372c87e.jpg" alt="Foto 1">
+            <div class="sticker s1">✨</div>
+            <div class="sticker s2">🩵</div>
+        </div>
+
+        <div class="photo-item">
+            <div class="tape"></div>
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.17_ce3b2717.jpg" alt="Foto 2">
+            <div class="sticker s1">💗</div>
+            <div class="sticker s2">🌸        </div>
+
+        <!-- CAPTION FOTO 1 -->
+        <p class="caption">My handsome boy 💕</p>
+
+        </div>
+
+        <div class="photo-item">
+            <div class="tape"></div>
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.17_ce3b2717.jpg" alt="Foto 2">
+            <div class="sticker s1">💗</div>
+            <div class="sticker s2">🌸</div>
+        </div>
+
+        <!-- CAPTION FOTO 2 -->
+        <p class="caption">The one I love the most 🫶✨</p>
+
     </div>
+
+    <style>
+        .caption {
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+    </style>
+
+
+<div class="envelope-container">
+    <div class="envelope" onclick="openEnvelope()">
+        <div class="flap"></div>
+        <div class="envelope-body"></div>
+        <p class="open-text">Klik untuk membuka 💌</p>
+    </div>
+
+    <div id="photoReveal" class="photo-hidden">
+        <img src="foto_amplop.jpg" alt="Foto dalam amplop">
+    </div>
+</div>
+
+<style>
+.envelope-container { margin-top: 40px; }
+.envelope {
+    width: 260px;
+    height: 180px;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+}
+.flap {
+    width: 100%;
+    height: 50%;
+    background: #d6d6d6;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    transition: 0.6s;
+    transform-origin: top;
+}
+.envelope-body {
+    width: 100%;
+    height: 60%;
+    background: #ffffff;
+    border: 3px solid #d0d0d0;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+.open-text {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.photo-hidden {
+    display: none;
+    margin-top: 20px;
+}
+.photo-hidden img {
+    width: 260px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+.envelope.open .flap {
+    transform: rotateX(180deg);
+}
+</style>
+
+<script>
+function openEnvelope() {
+    document.querySelector('.envelope').classList.add('open');
+    setTimeout(() => {
+        document.getElementById('photoReveal').style.display = 'block';
+    }, 600);
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #bfbfbf, #6f6f6f);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.2em;
+            font-weight: 700;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            animation: fadeDown 2s ease;
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* FOTO FRAME ESTETIK */
+        .photo-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .photo-item {
+            width: 220px;
+            padding: 12px;
+            background: rgba(255,255,255,0.12);
+            border-radius: 20px;
+            border: 3px dashed rgba(255,255,255,0.5);
+            position: relative;
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+            backdrop-filter: blur(5px);
+            transform: rotate(-2deg);
+            transition: 0.3s;
+        }
+
+        .photo-item:nth-child(2) { transform: rotate(2deg); }
+
+        .photo-item:hover {
+            transform: scale(1.05) rotate(0deg);
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* STIKER CUTE */
+        .sticker {
+            position: absolute;
+            font-size: 28px;
+        }
+        .s1 { top: -15px; left: -10px; }
+        .s2 { bottom: -10px; right: -5px; }
+
+        /* TAPE ESTETIK */
+        .tape {
+            width: 80px;
+            height: 25px;
+            background: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>selamat ulangtahun❤</h1>
+
+    <div class="photo-grid">
+
+        <!-- POLAROID 1 -->
+        <div class="polaroid">
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.18_3372c87e.jpg" alt="Foto 1">
+            <p class="polaroid-caption">My favorite person 💘</p>
+        </div>
+
+        <!-- POLAROID 2 -->
+        <div class="polaroid">
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.17_ce3b2717.jpg" alt="Foto 2">
+            <p class="polaroid-caption">The cutest boy 😍</p>
+        </div>
+
+    </div>
+
+<style>
+    .photo-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    /* DESAIN POLAROID BARU */
+    .polaroid {
+        width: 260px;
+        background: #ffffff;
+        padding: 12px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        transform: rotate(-2deg);
+        transition: 0.3s;
+    }
+    .polaroid:nth-child(2) { transform: rotate(3deg); }
+
+    .polaroid:hover {
+        transform: scale(1.05) rotate(0deg);
+    }
+
+    .polaroid img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .polaroid-caption {
+        color: #333;
+        font-weight: 600;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+</style>
+
+        <div class="photo-item">
+            <div class="tape"></div>
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.17_ce3b2717.jpg" alt="Foto 2">
+            <div class="sticker s1">💗</div>
+            <div class="sticker s2">🌸        </div>
+
+        <!-- CAPTION FOTO 1 -->
+        <p class="caption">My handsome boy 💕</p>
+
+        </div>
+
+        <div class="photo-item">
+            <div class="tape"></div>
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.17_ce3b2717.jpg" alt="Foto 2">
+            <div class="sticker s1">💗</div>
+            <div class="sticker s2">🌸</div>
+        </div>
+
+        <!-- CAPTION FOTO 2 -->
+        <p class="caption">The one I love the most 🫶✨</p>
+
+    </div>
+
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #bfbfbf, #6f6f6f);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.2em;
+            font-weight: 700;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            animation: fadeDown 2s ease;
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* FOTO FRAME ESTETIK */
+        .photo-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .photo-item {
+            width: 220px;
+            padding: 12px;
+            background: rgba(255,255,255,0.12);
+            border-radius: 20px;
+            border: 3px dashed rgba(255,255,255,0.5);
+            position: relative;
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+            backdrop-filter: blur(5px);
+            transform: rotate(-2deg);
+            transition: 0.3s;
+        }
+
+        .photo-item:nth-child(2) { transform: rotate(2deg); }
+
+        .photo-item:hover {
+            transform: scale(1.05) rotate(0deg);
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* STIKER CUTE */
+        .sticker {
+            position: absolute;
+            font-size: 28px;
+        }
+        .s1 { top: -15px; left: -10px; }
+        .s2 { bottom: -10px; right: -5px; }
+
+        /* TAPE ESTETIK */
+        .tape {
+            width: 80px;
+            height: 25px;
+            background: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.4);
+        }
+      .floating-hearts {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: floatUp 6s linear infinite;
+    opacity: 0.9;
+    transform: translateX(-50%);
+  }
+  @keyframes floatUp {
+    0% { transform: translate(-50%, 0) scale(0.8); opacity: 1; }
+    100% { transform: translate(-50%, -120vh) scale(1.4); opacity: 0; }
+  }
+  /* Animasi bintang berkedip */
+  .twinkle-star {
+    position: fixed;
+    top: -20px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-image: url('star.png'); /* ganti dengan gambar bintang lucu */
+    background-size: cover;
+    animation: twinkle 3s infinite ease-in-out;
+    opacity: 0.8;
+  }
+  @keyframes twinkle {
+    0% { transform: scale(0.5) translateY(0); opacity: 0.4; }
+    50% { transform: scale(1.2) translateY(40px); opacity: 1; }
+    100% { transform: scale(0.5) translateY(80px); opacity: 0.4; }
+  }
+
+  /* Animasi confetti pelangi */
+  .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, white, grey);
+    top: -10px;
+    border-radius: 50%;
+    animation: fallConfetti linear infinite;
+    opacity: 0.9;
+  }
+  @keyframes fallConfetti {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+  }
+</style>
+</head>
+<body>
+
+    <h1>selamat ulangtahun❤</h1>
+
+    <div class="photo-grid">
+
+        <!-- POLAROID 1 -->
+        <div class="polaroid">
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.18_3372c87e.jpg" alt="Foto 1">
+            <p class="polaroid-caption">My favorite person 💘</p>
+        </div>
+
+        <!-- POLAROID 2 -->
+        <div class="polaroid">
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.17_ce3b2717.jpg" alt="Foto 2">
+            <p class="polaroid-caption">The cutest boy 😍</p>
+        </div>
+
+    </div>
+
+<style>
+    .photo-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    /* DESAIN POLAROID BARU */
+    .polaroid {
+        width: 260px;
+        background: #ffffff;
+        padding: 12px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        transform: rotate(-2deg);
+        transition: 0.3s;
+    }
+    .polaroid:nth-child(2) { transform: rotate(3deg); }
+
+    .polaroid:hover {
+        transform: scale(1.05) rotate(0deg);
+    }
+
+    .polaroid img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .polaroid-caption {
+        color: #333;
+        font-weight: 600;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+</style>
+
+        <div class="photo-item">
+            <div class="tape"></div>
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.17_ce3b2717.jpg" alt="Foto 2">
+            <div class="sticker s1">💗</div>
+            <div class="sticker s2">🌸        </div>
+
+        <!-- CAPTION FOTO 1 -->
+        <p class="caption">My handsome boy 💕</p>
+
+        </div>
+
+        <div class="photo-item">
+            <div class="tape"></div>
+            <img src="c:/Users/WULAN APRIYANTI/Downloads/WhatsApp Image 2025-11-30 at 00.12.17_ce3b2717.jpg" alt="Foto 2">
+            <div class="sticker s1">💗</div>
+            <div class="sticker s2">🌸</div>
+        </div>
+
+        <!-- CAPTION FOTO 2 -->
+        <p class="caption">The one I love the most 🫶✨</p>
+
+    </div>
+
+    <!-- CAPTION TAMBAHAN DI BAWAHNYA -->
+    <div class="extra-captions">
+        <p class="caption2">💌 Kamu selalu jadi alasan aku tersenyum setiap hari.</p>
+        <p class="caption2">🌙 Terima kasih sudah hadir dan bikin hariku lebih hangat.</p>
+        <p class="caption2">💕 Semoga kita terus bareng-bareng sampai kapan pun.</p>
+    </div>
+
+    <style>
+        .caption {
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+    </style>
+
+
+
+
+  <script>
+    function createFloatingHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('floating-hearts');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.backgroundImage = "url('heart-photo.png')"; // ganti dengan foto berbentuk love
+      heart.style.animationDuration = (4 + Math.random() * 4) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 7000);
+    }
+    setInterval(createFloatingHeart, 1200);
+  </script>
+  <script>
+    // Bintang berkedip muncul acak
+    function createStar() {
+      const star = document.createElement('div');
+      star.classList.add('twinkle-star');
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.animationDuration = (2 + Math.random() * 3) + 's';
+      document.body.appendChild(star);
+      setTimeout(() => star.remove(), 4000);
+    }
+    setInterval(createStar, 1500);
+
+    // Confetti jatuh
+    function createConfetti() {
+      const conf = document.createElement('div');
+      conf.classList.add('confetti');
+      conf.style.left = Math.random() * 100 + 'vw';
+      conf.style.animationDuration = (3 + Math.random() * 2) + 's';
+      document.body.appendChild(conf);
+      setTimeout(() => conf.remove(), 5000);
+    }
+    setInterval(createConfetti, 500);
+  </script>
+    <!-- ANIMASI STIKER TERBANG PAKAI FOTO SENDIRI -->
+    <style>
+        .flying-sticker {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            animation: flySticker 6s linear infinite;
+            opacity: 0.9;
+        }
+
+        @keyframes flySticker {
+            0% { transform: translateY(50vh) translateX(-30vw) rotate(0deg); }
+            25% { transform: translateY(20vh) translateX(10vw) rotate(20deg); }
+            50% { transform: translateY(-10vh) translateX(30vw) rotate(-20deg); }
+            75% { transform: translateY(-30vh) translateX(-10vw) rotate(10deg); }
+            100% { transform: translateY(-60vh) translateX(-30vw) rotate(0deg); }
+        }
+    </style>
+
+    <!-- GANTI FOTO INI DENGAN FOTO KAMU SENDIRI -->
+    <img src="foto-kamu.png" class="flying-sticker" style="left: 20%; animation-delay: 0s;">
+    <img src="foto-kamu.png" class="flying-sticker" style="left: 60%; animation-delay: 2s;">
+    <img src="foto-kamu.png" class="flying-sticker" style="left: 40%; animation-delay: 4s;">
+
+</body>
+</html>
+
+
